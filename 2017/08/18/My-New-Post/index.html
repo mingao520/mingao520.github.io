@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="hexo," />
 
 
 
@@ -94,17 +94,18 @@
 
 
 
-<meta name="description" content="Hexo是一个轻量级的博客使用hexo生成静态博客并架设在免费的github page平台  系统:   Window  使用软件:   Git for windows Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统  第一步：安装git软件。具体如何使用，请查找相关教程。 第二步：安装Node.js软件。He">
+<meta name="description" content="Hexo是一个轻量级的博客使用hexo生成静态博客并架设在免费的github page平台  系统:   Window  使用软件:   Git for windows Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统  第一步：安装git软件。具体如何使用，请查找相关教程。第二步：安装Node.js软件。Hex">
+<meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo搭建个人博客部署于Github">
 <meta property="og:url" content="http://yoursite.com/2017/08/18/My-New-Post/index.html">
 <meta property="og:site_name" content="无名的博客">
-<meta property="og:description" content="Hexo是一个轻量级的博客使用hexo生成静态博客并架设在免费的github page平台  系统:   Window  使用软件:   Git for windows Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统  第一步：安装git软件。具体如何使用，请查找相关教程。 第二步：安装Node.js软件。He">
+<meta property="og:description" content="Hexo是一个轻量级的博客使用hexo生成静态博客并架设在免费的github page平台  系统:   Window  使用软件:   Git for windows Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统  第一步：安装git软件。具体如何使用，请查找相关教程。第二步：安装Node.js软件。Hex">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-18T15:58:03.637Z">
+<meta property="og:updated_time" content="2017-08-19T09:30:56.630Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建个人博客部署于Github">
-<meta name="twitter:description" content="Hexo是一个轻量级的博客使用hexo生成静态博客并架设在免费的github page平台  系统:   Window  使用软件:   Git for windows Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统  第一步：安装git软件。具体如何使用，请查找相关教程。 第二步：安装Node.js软件。He">
+<meta name="twitter:description" content="Hexo是一个轻量级的博客使用hexo生成静态博客并架设在免费的github page平台  系统:   Window  使用软件:   Git for windows Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统  第一步：安装git软件。具体如何使用，请查找相关教程。第二步：安装Node.js软件。Hex">
 
 
 
@@ -112,7 +113,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
@@ -204,12 +205,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            归档
+            分类
           </a>
         </li>
       
@@ -220,6 +221,26 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -296,6 +317,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -333,14 +376,11 @@
 <li>Git for windows</li>
 <li>Node.js for windows<br>32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统</li>
 </ul>
-<p>第一步：安装git软件。具体如何使用，请查找相关教程。</p>
-<p>第二步：安装Node.js软件。<br>Hexo是靠node驱动，所以以上除了github以外都是是必须的。</p>
-<p>第三步：安装hexo,在Git Bash端执行下面的命令就可以安装Hexo。</p>
-<pre><code> $ npm install hexo-cli -g
+<h2 id="第一步：安装git软件。具体如何使用，请查找相关教程。"><a href="#第一步：安装git软件。具体如何使用，请查找相关教程。" class="headerlink" title="第一步：安装git软件。具体如何使用，请查找相关教程。"></a>第一步：安装git软件。具体如何使用，请查找相关教程。</h2><h2 id="第二步：安装Node-js软件。"><a href="#第二步：安装Node-js软件。" class="headerlink" title="第二步：安装Node.js软件。"></a>第二步：安装Node.js软件。</h2><p>Hexo是靠node驱动，所以以上除了github以外都是是必须的。</p>
+<h2 id="第三步：安装hexo-在Git-Bash端执行下面的命令就可以安装Hexo。"><a href="#第三步：安装hexo-在Git-Bash端执行下面的命令就可以安装Hexo。" class="headerlink" title="第三步：安装hexo,在Git Bash端执行下面的命令就可以安装Hexo。"></a>第三步：安装hexo,在Git Bash端执行下面的命令就可以安装Hexo。</h2><pre><code> $ npm install hexo-cli -g
 </code></pre>
 
-<p>第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了</p>
-<pre><code> $ hexo init blog
+<h2 id="第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了"><a href="#第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了" class="headerlink" title="第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了"></a>第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了</h2><pre><code> $ hexo init blog
   $ cd blog
 </code></pre>
 
@@ -354,31 +394,26 @@ $ hexo h/help # 查看帮助
 $ hexo v/version #查看Hexo的版本
 </code></pre>
 
-<p>第五步：依次执行命令行：</p>
-<pre><code> $ hexo g
+<h2 id="第五步：依次执行命令行："><a href="#第五步：依次执行命令行：" class="headerlink" title="第五步：依次执行命令行："></a>第五步：依次执行命令行：</h2><pre><code> $ hexo g
   $ hexo s
 </code></pre>
 
 <p>这时，正常情况下，用浏览器打开<a href="http://localhost:4000/，不出意外的话，你就可以看到你的博客了" target="_blank" rel="external">http://localhost:4000/，不出意外的话，你就可以看到你的博客了</a></p>
-<p>第六步：你需要一个github的帐号，如何注册请查找相关教程。<br>1、点击”New repository”，新建一个版本库。<br>2、输入Repository name:yourname.github.io(yourname与你的注册用户名一致,这个就是你博客的域名了) </p>
-<p>第七步：首先打开hexo文件的_condig.yml配置文件，拉到最下面，修改配置</p>
-<pre><code> deploy:  
+<h2 id="第六步：你需要一个github的帐号，如何注册请查找相关教程。"><a href="#第六步：你需要一个github的帐号，如何注册请查找相关教程。" class="headerlink" title="第六步：你需要一个github的帐号，如何注册请查找相关教程。"></a>第六步：你需要一个github的帐号，如何注册请查找相关教程。</h2><p>1、点击”New repository”，新建一个版本库。<br>2、输入Repository name:yourname.github.io(yourname与你的注册用户名一致,这个就是你博客的域名了) </p>
+<h2 id="第七步：首先打开hexo文件的-condig-yml配置文件，拉到最下面，修改配置"><a href="#第七步：首先打开hexo文件的-condig-yml配置文件，拉到最下面，修改配置" class="headerlink" title="第七步：首先打开hexo文件的_condig.yml配置文件，拉到最下面，修改配置"></a>第七步：首先打开hexo文件的_condig.yml配置文件，拉到最下面，修改配置</h2><pre><code> deploy:  
 type: git
 repository: https://github.com/yourname/yourname.github.io.git 
 branch: master
 </code></pre>
 
-<p>第八步：安装插件</p>
-<pre><code>$ npm install hexo-deployer-git --save
+<h2 id="第八步：安装插件"><a href="#第八步：安装插件" class="headerlink" title="第八步：安装插件"></a>第八步：安装插件</h2><pre><code>$ npm install hexo-deployer-git --save
 </code></pre>
 
-<p>第九步：上传文件至github.</p>
-<pre><code>$ hexo deploy
+<h2 id="第九步：上传文件至github"><a href="#第九步：上传文件至github" class="headerlink" title="第九步：上传文件至github."></a>第九步：上传文件至github.</h2><pre><code>$ hexo deploy
 </code></pre>
 
 <p>这时，如果正常<a href="https://yourname.github.io/" target="_blank" rel="external">https://yourname.github.io/</a> 就可看到你的博客了。</p>
-<p>其他说明;</p>
-<p>1、hexo 的博客文件都在\blog\source_posts下面，后缀为.md,需要markdown文件编辑器打开，可以新增、删除、修改。<br>2、本地查看方法：<br>   先输入<br>   <pre><code>$ hexo s<br></code></pre><br> 然后在浏览器输入：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
+<h2 id="其他说明"><a href="#其他说明" class="headerlink" title="其他说明;"></a>其他说明;</h2><p>1、hexo 的博客文件都在\blog\source_posts下面，后缀为.md,需要markdown文件编辑器打开，可以新增、删除、修改。<br>2、本地查看方法：<br>   先输入<br>   <pre><code>$ hexo s<br></code></pre><br> 然后在浏览器输入：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
 <p> 3、更新网站博客的方法：<br>  <pre><code>$ hexo d -g<br></code></pre></p>
 
       
@@ -394,6 +429,12 @@ branch: master
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/hexo/" rel="tag"># hexo</a>
+          
+        </div>
       
 
       
@@ -464,15 +505,24 @@ branch: master
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
                alt="mingao" />
           <p class="site-author-name" itemprop="name">mingao</p>
            
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">一个无名的创客</p>
           
         </div>
         <nav class="site-state motion-element">
@@ -487,7 +537,25 @@ branch: master
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
@@ -509,6 +577,22 @@ branch: master
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一步：安装git软件。具体如何使用，请查找相关教程。"><span class="nav-number">1.</span> <span class="nav-text">第一步：安装git软件。具体如何使用，请查找相关教程。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二步：安装Node-js软件。"><span class="nav-number">2.</span> <span class="nav-text">第二步：安装Node.js软件。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三步：安装hexo-在Git-Bash端执行下面的命令就可以安装Hexo。"><span class="nav-number">3.</span> <span class="nav-text">第三步：安装hexo,在Git Bash端执行下面的命令就可以安装Hexo。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了"><span class="nav-number">4.</span> <span class="nav-text">第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五步：依次执行命令行："><span class="nav-number">5.</span> <span class="nav-text">第五步：依次执行命令行：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六步：你需要一个github的帐号，如何注册请查找相关教程。"><span class="nav-number">6.</span> <span class="nav-text">第六步：你需要一个github的帐号，如何注册请查找相关教程。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第七步：首先打开hexo文件的-condig-yml配置文件，拉到最下面，修改配置"><span class="nav-number">7.</span> <span class="nav-text">第七步：首先打开hexo文件的_condig.yml配置文件，拉到最下面，修改配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第八步：安装插件"><span class="nav-number">8.</span> <span class="nav-text">第八步：安装插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第九步：上传文件至github"><span class="nav-number">9.</span> <span class="nav-text">第九步：上传文件至github.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他说明"><span class="nav-number">10.</span> <span class="nav-text">其他说明;</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -545,7 +629,7 @@ branch: master
   <div class="theme-info">
     主题 &mdash;
     <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-      NexT.Muse
+      NexT.Pisces
     </a>
   </div>
 
@@ -630,6 +714,13 @@ branch: master
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
