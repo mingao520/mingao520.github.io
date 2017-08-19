@@ -375,7 +375,21 @@ Window
 使用软件: 
 
 Git for windows
-Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位
+Node.js for windows32位或64位按自己电脑的系统来选择，如果不清楚，可以直接在官网下载32位的，可以兼容64位系统
+
+第一步：安装git软件。具体如何使用，请查找相关教程。第二步：安装Node.js软件。Hexo是靠node驱动，所以以上除了github以外都是是必须的。
+第三步：安装hexo,在Git Bash端执行下面的命令就可以安装Hexo。 $ npm install hexo-cli -g
+
+
+第四步：然后初始化hexo，进入文件之后就可以执行后面的命令了 $ hexo init blog
+  $ cd blog
+
+
+介绍一下hexo下用到的命令：
+ $ hexo g/generate #生成静态文件
+$ hexo s/server #启动服务器，主要用来本地预览
+$ hexo d/deploy #将本地文件发布到github或Coding上
+$ hexo n/new "postName"
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -523,8 +537,17 @@ Node.js for windows32位或64位按自己电脑的系统来选择，如果不清
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new "My New Post"
+More info: Writing
+Run server1$ hexo server
+More info: Server
+Generate static files1$ hexo generate
+More info: Generating
+Deploy to remote sites1$ hexo deploy
+More info: Deployment
+
+          
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/08/18/hello-world/#more" rel="contents">
